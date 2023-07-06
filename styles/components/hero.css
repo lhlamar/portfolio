@@ -40,6 +40,20 @@
     font-size: var(--size-sm);
 }
 
+.hero__links-container {
+    display: grid;
+    grid-auto-flow: column;
+    /* grid-auto-rows: minmax(20px, auto); */
+    gap: .8rem;
+    
+}
+
+.hero__link {
+    width: var(--size-3xl);
+    height: var(--size-3xl);
+    /* color: var(--clr-gray-medium) !important; */
+}
+
 /* xs */
 @media (min-width: 475px) {
     .hero {
@@ -100,6 +114,12 @@
     .hero_btn {
         font-size: var(--size-lg);
     }
+
+    .hero__link {
+        width: var(--size-4xl);
+        height: var(--size-4xl);
+    
+    }
 }
 
 /* xl */
@@ -128,6 +148,12 @@
     
     .hero_btn {
         font-size: var(--size-xl);
+    }
+
+    .hero__link {
+        width: var(--size-5xl);
+        height: var(--size-5xl);
+    
     }
 }
 
